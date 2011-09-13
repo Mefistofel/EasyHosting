@@ -1,11 +1,14 @@
+#########
+# V 1.0 #
+#########
 #!/usr/local/bin/perl
 system "aptitude update";
 system "aptitude install -y mysql-server apache2 apache2-suexec libapache2-mod-fcgid php5  php5-mysql php5-cgi vsftpd";
 system "a2dismod php5";
 system "a2enmod suexec";
-#system "mkdir /var/www/httpd-logs";
-#system "addgroup secure";
-#system "echo \"/bin/date\" >> /etc/shells";
+system "mkdir /var/www/httpd-logs";
+system "addgroup secure";
+system "echo \"/bin/date\" >> /etc/shells";
 open (FCGI, '>/etc/apache2/mods-available/fcgid.conf');
 print FCGI "<IfModule mod_fcgid.c>
     AddHandler    fcgid-script .fcgi
