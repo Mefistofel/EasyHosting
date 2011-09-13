@@ -1,1 +1,4 @@
-These scripts are made in order to facilitate the creation and further administration of the hosting which works on the base of: Apache2 PHP5(as mod_fcgi) MYSQL VSFTPD.
+These scripts are made in order to facilitate
+the creation and further administration of
+the hosting which works on the base of:
+Apache2 PHP5(as mod_fcgi) MYSQL VSFTPD.
