@@ -13,4 +13,4 @@ into the system and additing "/bin/date" to the file /etc/shells.
 
 adduser.pl is administered for adding new user to virtualhost and ftp.
 
-
+>>> This project is still rather raw and we are planning its further prooving and functional expansion :) <<<
