@@ -9,7 +9,7 @@ The scripts are worked out and designed for Debian GNU/Linux.
 
 install.pl is administered for installation Apache2, PHP5, MySQL, VSFTP,
 and bringing some changes into the system namely creating new group secure
-into the system and aditing "/bin/date" to the file /etc/shells.
+into the system and additing "/bin/date" to the file /etc/shells.
 
 adduser.pl is administered for adding new user to virtualhost and ftp.
 
