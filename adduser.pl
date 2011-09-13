@@ -1,7 +1,10 @@
-print "Юзер:";
+#########
+# V 1.0 #
+#########
+print "USER:";
 $user = <STDIN>;
 chomp $user;
-print "Домен:";
+print "DOMAIN:";
 $domain = <STDIN>;
 chomp $domain;
 system "mkdir /var/www/$user";
@@ -17,7 +20,7 @@ system "chmod 501 /var/www/$user/data/php-bin/php";
 system "chmod 777 /var/www/$user/data/bin-tmp";
 open (FILE, '>>/etc/apache2/apache2.conf') or die $!;
 print FILE "
-<VirtualHost 188.230.104.206:80>
+<VirtualHost *:80>
     ServerName $domain
     DocumentRoot /var/www/$user/data/www/$domain
     SuexecUserGroup $user $user
