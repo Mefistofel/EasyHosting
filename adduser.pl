@@ -12,7 +12,7 @@ system "useradd $user -d /var/www/$user/data -m -G secure -s /bin/date";
 system "mkdir /var/www/$user/data/php-bin";
 system "mkdir /var/www/$user/data/bin-tmp";
 system "mkdir /var/www/$user/data/logs";
-system "touch /var/www/$user/data/logs/php_errors.log";
+system "touch /var/www/$user/data/logs/php.errors.log";
 system "mkdir /var/www/$user/data/www";
 system "mkdir /var/www/$user/data/www/$domain";
 system "echo \"\#\!/usr/bin/php5-cgi\" > /var/www/$user/data/php-bin/php";
@@ -55,7 +55,7 @@ display_errors = Off
 display_startup_errors = Off
 log_errors = On
 error_reporting = E_ALL
-error_log = \"/var/www/$user/data/logs/php_errors.log\"
+error_log = \"/var/www/$user/data/logs/php.errors.log\"
 magic_quotes_sybase = Off
 ";
 close (INI);
