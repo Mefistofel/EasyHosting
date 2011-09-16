@@ -15,6 +15,7 @@ system "mkdir /var/www/$user/data/logs";
 system "touch /var/www/$user/data/logs/php.errors.log";
 system "mkdir /var/www/$user/data/www";
 system "mkdir /var/www/$user/data/www/$domain";
+system "mkdir /var/www/$user/data/www/$domain/cgi-bin";
 system "echo \"\#\!/usr/bin/php5-cgi\" > /var/www/$user/data/php-bin/php";
 open (FILE, '>>/etc/apache2/apache2.conf') or die $!;
 print FILE "
@@ -64,6 +65,7 @@ system "chmod 777 /var/www/$user/data/bin-tmp";
 system "chmod 501 /var/www/$user";
 system "chown -R $user:$user /var/www/$user";
 system "chmod 751 /var/www/$user/data/www/$domain";
+system "chmod 751 /var/www/$user/data/www/$domain/cgi-bin";
 system "chown $user:secure /var/www/$user";
 print "GENERATED PASSWORD (paste it below if you want):\n";
 system "cat /dev/urandom| tr -dc 'a-zA-Z0-9' | fold -w 10| head -n 1";
