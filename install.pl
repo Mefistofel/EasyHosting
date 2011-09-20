@@ -20,6 +20,7 @@ close (FCGI);
 open (VSFTP, '>>/etc/vsftpd.conf');
 print VSFTP "rsa_cert_file=/etc/ssl/private/vsftpd.pem
 chroot_local_user=YES
+write_enable=YES
 local_enable=YES
 force_dot_files=YES
 background=YES
