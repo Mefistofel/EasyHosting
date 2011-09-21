@@ -12,5 +12,11 @@ and bringing some changes into the system namely creating new group secure
 into the system and additing "/bin/date" to the file /etc/shells.
 
 adduser.pl is administered for adding new user to virtualhost and ftp.
+##########################################################
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+#!DON'T FORGET TO CHANGE IP IN: <VirtualHost 0.0.0.0:80>!#
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+##########################################################
+
 
 >>> This project is still rather raw and we are planning its further prooving and functional expansion :) <<<
