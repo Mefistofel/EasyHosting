@@ -19,7 +19,7 @@ system "mkdir /var/www/$user/data/www/$domain/cgi-bin";
 system "echo \"\#\!/usr/bin/php5-cgi\" > /var/www/$user/data/php-bin/php";
 open (FILE, '>>/etc/apache2/apache2.conf') or die $!;
 print FILE "
-<VirtualHost 188.230.104.206:80>
+<VirtualHost 0.0.0.0:80>
     ServerName $domain
     DocumentRoot /var/www/$user/data/www/$domain
     SuexecUserGroup $user $user
